@@ -13,6 +13,7 @@
     "@types/chai": "^4.3.4",
     "@types/express": "^4.17.17",
     "@types/mocha": "^10.0.1",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "chai": "^4.3.7",
     "eslint": "^8.39.0",
@@ -27,6 +28,7 @@
     "instant-mocha": "^1.5.1",
     "mocha": "^10.2.0",
     "prettier": "2.8.8",
+    "supertest": "^6.3.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "webpack": "^5.80.0"
