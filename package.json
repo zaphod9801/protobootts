@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "mocha --require esbuild-register 'test/**/*.spec.ts'",
+    "test": "nyc mocha --require esbuild-register 'test/**/*.spec.ts'",
     "build": "esbuild --bundle src/app.ts --outdir=dist --platform=node",
     "start": "node dist/app.js",
     "lint:all": "eslint src/**/*.ts",
@@ -27,6 +27,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "instant-mocha": "^1.5.1",
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "prettier": "2.8.8",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.1",
