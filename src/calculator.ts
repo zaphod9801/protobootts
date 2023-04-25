@@ -1,9 +1,8 @@
-export class Calculator{
-    public square(num: number){
-    return num*num
+
+export function square(num: number): number {
+	return num * num;
 }
 
-    public cube(num: number){
-    return num*num*num
-}
+export function cube(num: number): number {
+	return num * num * num;
 }
