@@ -28,6 +28,11 @@ describe('router', () => {
     const response = await request(app).get('/cubo');
     assert.strictEqual(response.status, 200);
   });
+
+  it('Test unexistant route', async () => {
+    const response = await request(app).get('/something');
+    assert.strictEqual(response.status, 404);
+  });
 });
 
 
