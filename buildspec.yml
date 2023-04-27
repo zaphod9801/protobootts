@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - npm ci --verbose
+      - npm install --verbose
   pre_build:
     commands:
       - npm run lint:all
