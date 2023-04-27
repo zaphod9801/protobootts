@@ -5,7 +5,7 @@ import { cube, square } from './calculator';
 export const router = express.Router();
 
 router.get('/', (req: Request, res: Response) => {
-  res.send('Bienvenido! Esta aplicación ayuda a elevar números a sus potencias y a entender AWS. Actualmente estás en el entorno de desarrollo');
+  res.send('Bienvenido! Esta aplicación ayuda a elevar números a sus potencias y a entender AWS.');
 });
 
 router.get('/hola', (req: Request, res: Response) => {
