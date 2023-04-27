@@ -3,29 +3,16 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['airbnb', 'plugin:@typescript-eslint/recommended'],
+  extends: ['airbnb', 'airbnb-typescript', 'plugin:import/errors', 'plugin:import/warnings', 'plugin:import/typescript'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  settings: {
-    'import/resolver': {
-      typescript: {},
-    },
-  },
+  plugins: ['@typescript-eslint'],
   rules: {
-    'no-console': 'off',
-    'import/prefer-default-export': 'off',
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        ts: 'never',
-      },
-    ],
+    'no-console': 'warn',
   },
   overrides: [
     {
@@ -39,7 +26,7 @@ module.exports = {
       files: ['**/*.js', '**/*.ts'],
       rules: {
         semi: ['error', 'always'],
-      },
+      }
     },
   ],
 };
