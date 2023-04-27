@@ -1,25 +1,25 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  extends: ['airbnb'],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: './tsconfig.json',
-  },
-  overrides: [
-    {
-      files: ['**/*.json'],
-      rules: {
-        semi: ['off'],
-        quotes: ['off'],
-      },
-      files: ['**/*.js', '**/*.ts'],
-      rules: {
-        semi: ['error', 'always'],
-      }
+  extends: ['airbnb', 'plugin:@typescript-eslint/recommended'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  settings: {
+    'import/resolver': {
+      typescript: {},
     },
-  ],
+  },
+  rules: {
+    // Add or update import-related rules here
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+      },
+    ],
+    'import/no-unresolved': 'error',
+    'import/prefer-default-export': 'off',
+    // Other existing rules
+  },
+  // Other existing configurations
 };
+

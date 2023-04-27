@@ -10,5 +10,5 @@ const port = process.env.PORT || 3000;
 app.use(router);
 
 app.listen(port, () => {
-    console.log(`[server]: Development Server is running on http://0.0.0.0:${port}`);
+  console.log(`[server]: Development Server is running on http://0.0.0.0:${port}`);
 });

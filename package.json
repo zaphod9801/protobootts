@@ -3,7 +3,7 @@
     "test": "nyc mocha --require esbuild-register 'test/**/*.spec.ts'",
     "build": "esbuild --bundle src/app.ts --outdir=dist --platform=node",
     "start": "node dist/app.js",
-    "lint:all": "eslint src/**/*.ts",
+    "lint:all": "npx eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "format:check": "npx prettier --check src test",
     "format:fix": "npx prettier --write src test"
@@ -19,6 +19,7 @@
     "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-n": "^15.7.0",
