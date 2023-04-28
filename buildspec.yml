@@ -29,7 +29,7 @@ reports:
     files:
       - 'coverage/cobertura-coverage.xml'
     file-format: COBERTURAXML
-    base-directory: 'coverage/'
+    base-directory: '/codebuild/output/src*/src/coverage/'
 
 artifacts:
   files:
