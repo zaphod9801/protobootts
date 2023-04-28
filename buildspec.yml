@@ -23,6 +23,8 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully"
+      - echo "Coverage directory path:"
+      - echo $(pwd)/coverage
       
 reports:
   CoberturaReportGroup:
