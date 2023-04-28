@@ -32,6 +32,10 @@ reports:
       - 'coverage/cobertura-coverage.xml'
     file-format: COBERTURAXML
     base-directory: '/codebuild/output/src*/src/'
+    export-config:
+      export-to: S3
+      s3-bucket: 'codepipeline-us-east-1-689541132237'
+      s3-key-prefix: reports/
 
 artifacts:
   files:
