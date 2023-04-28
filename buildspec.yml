@@ -29,9 +29,9 @@ phases:
 reports:
   CoberturaReportGroup:
     files:
-      - '/codebuild/output/src*/src/coverage/cobertura-coverage.xml'
+      - 'coverage/cobertura-coverage.xml'
     file-format: COBERTURAXML
-    base-directory: '/codebuild/output/src*/src/coverage/'
+    base-directory: '/codebuild/output/src*/src/'
 
 artifacts:
   files:
