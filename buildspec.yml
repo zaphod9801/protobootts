@@ -21,6 +21,13 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully"
+      
+reports:
+  CoberturaReportGroup:
+    files:
+      - 'coverage/cobertura-coverage.xml'
+    file-format: COBERTURAXML
+    base-directory: 'coverage/'
 
 artifacts:
   files:

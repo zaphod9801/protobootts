@@ -43,5 +43,18 @@
     "esbuild-register": "^3.4.2",
     "express": "^4.18.2",
     "joi": "^17.9.2"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "text",
+      "cobertura"
+    ],
+    "report-dir": "coverage"
   }
 }
